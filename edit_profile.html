@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="main_script.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 4fr;
+            grid-column-gap: 10px;
+        }
+
+        #form {
+            display: grid;
+            grid-template-columns: 2fr 2fr;
+            grid-column-gap: 10px;
+        }
+    </style>
+
+    <div>
+        <a href="main.html">
+            <h1>Navbar</h1>
+        </a>
+        <a href="">Login</a>
+        <a href="">Logout</a>
+    </div>
+    <hr>
+
+    <div class="container">
+        <div>
+
+            <div>Menu</div>
+            <ul>
+                <li><a href="main.html">Home</a></li>
+                <hr>
+                <li><a href="profile.html">Profile</a></li>
+                <hr>
+                <li><a>Appointment</a></li>
+                <hr>
+                <li><a>Schedules</a></li>
+                <hr>
+                <li><a>Events</a></li>
+                <hr>
+            </ul>
+
+            <ul>
+                <li>System Time</li>
+                <li>Tuesday, July 12 2022</li>
+                <li>02:48:23</li>
+            </ul>
+        </div>
+
+
+        <div>
+
+            <form action="" id="form">
+
+                <div>
+                    <div>Personal Information</div>
+                    <hr>
+
+                    <h4>You're on edit mode.</h4>
+                    <span>Last Name: John</span>
+                    <span>First Name: Regado</span>
+                    <span>Middle Name: C</span>
+                    <span>Sex: male</span>
+                    <span>Birthdate: 1999-12-15</span>
+                    <span>Family Relation:</span>
+                    <span>Education: College</span>
+                    <span>Family Planning: </span>
+                    <span>House Number: 32</span>
+                    <span>Zone Number: 1</span>
+                    <span>Comfort Room Info: </span>
+                    <hr>
+
+                    <label for="last_name">Last Name: </label>
+                    <input type="text" name="last_name" value="John"><br><br>
+
+                    <label for="first_name">First Name: </label>
+                    <input type="text" name="firstname_name" value="Regado"><br><br>
+
+                    <label for="middle_name">Middle Name: </label>
+                    <input type="text" name="middle_name" value="C"><br>
+                    <hr>
+
+                    <label for="sex">Sex</label>
+                    <select name="sex" value="male">
+                        <option value="male">male</option>
+                        <option value="female">female</option>
+                    </select>
+                    <hr>
+
+                    <label for="date">Birthdate</label>
+                    <input type="date" name="birth_date" value="1999-12-15">
+                    <hr>
+
+                    <label for="family_relation">Family Relation: </label>
+                    <select name="family_relation" value="relationship">
+                        <option value="f1">-------</option>
+                        <option value="f2">------</option>
+                    </select>
+                    <hr>
+
+                    <label for="education">Education: </label>
+                    <select name="education" value="college">
+                        <option value="e1">High School</option>
+                        <option value="e2">Undergraduate</option>
+                        <option value="e2">Vocational</option>
+                        <option value="e2">College</option>
+                    </select>
+                    <hr>
+
+                    <label for="family_planning_method">Family Planning Method</label>
+                    <select name="family_planning_method" value="method">
+                        <option value="e1">-------</option>
+                        <option value="e2">------</option>
+                    </select>
+                    <hr>
+
+                    <p>Remarks</p>
+
+                    <label for="ap">A.P</label>
+                    <input type="checkbox" name="ap" value="AP" value="true"><br>
+
+                    <label for="pp">P.P</label>
+                    <input type="checkbox" name="pp" value="PP"><br>
+
+                    <label for="fp_acceptor">P.P</label>
+                    <input type="checkbox" name="fp_acceptor" value="FP_Acceptor"><br>
+
+                    <label for="ufc">U.F.C</label>
+                    <input type="checkbox" name="ufc" value="UFC"><br>
+
+                    <label for="tp_patient">T.B Patient</label>
+                    <input type="checkbox" name="tb_patient" value="TB_Patient"><br>
+                    <hr>
+                </div>
+
+
+                <div>
+                    <div>Residence Information</div>
+                    <hr>
+
+                    <label for="house_number">House Number: </label>
+                    <input type="text" name="house_number" value="32">
+                    <br><br>
+
+                    <label for="zone_number">Zone Number: </label>
+                    <input type="text" name="zone_number" value="1">
+                    <hr>
+
+                    <label for="comfort_room_info">Comfort Room Information: </label>
+                    <select name="comfort_room_info" id="">
+                        <option value="">-------</option>
+                        <option value="">-------</option>
+                    </select>
+                    <br><br>
+
+                    <input type="submit">
+                    <button>Cancel</button>
+
+                    <hr>
+
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
+    <hr>
+
+</body>
+
+</html>
